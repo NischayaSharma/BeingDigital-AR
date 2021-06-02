@@ -1,5 +1,3 @@
-'use strict';
-
 import React, { useState,useEffect } from 'react';
 
 import {StyleSheet} from 'react-native';
@@ -23,6 +21,7 @@ const HelloWorldSceneAR = () => {
   //   }
   // }
   // OK..
+  // 
   const onInitialized = (data) => {
     console.log(data)
     if (text == ViroConstants.TRACKING_NORMAL) {

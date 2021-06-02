@@ -77,6 +77,7 @@ project.ext.react = [
 ]
 
 apply from: "../../node_modules/react-native/react.gradle"
+apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"  
 
 /**
  * Set this to true to create two separate APKs instead of one:
@@ -163,6 +164,7 @@ dependencies {
     implementation project(':gvr_common')
     implementation project(path: ':viro_renderer')
     implementation project(path: ':react_viro')
+    implementation project(':react-native-vector-icons')  
     implementation 'com.google.android.exoplayer:exoplayer:2.7.1'
     implementation 'com.google.protobuf.nano:protobuf-javanano:3.0.0-alpha-7'
     implementation 'com.amazonaws:aws-android-sdk-core:2.7.7'
