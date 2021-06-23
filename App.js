@@ -13,31 +13,82 @@ import Carousel from 'react-native-snap-carousel';
 
 DATA=[
   {
-    id:1,
-    model: "",
-    image:"https://image.shutterstock.com/image-photo/large-beautiful-drops-transparent-rain-600w-668593321.jpg",
-    text:"Filter1"
+      id:1,
+      name:'filter',
+      image:"https://images-eu.ssl-images-amazon.com/images/I/41ApDHxyOQL._SY445_SX342_QL70_FMwebp_.jpg",
+      text:"Filter 1",
+      subtitle:"this is a subtile"
+
+  },
+  
+  {
+      id:2,
+      name:'filter',
+      image:"https://m.media-amazon.com/images/I/71DVgBTdyLL._AC_UY218_.jpg",
+      text:"Filter 2",
+      subtitle:"this is a subtile"
+
   },
   {
-    id:2,
-    image:"https://image.shutterstock.com/image-photo/large-beautiful-drops-transparent-rain-600w-668593321.jpg",
-    text:"Filter2"
+      id:3,
+      name:'filter',
+      image:"https://images-na.ssl-images-amazon.com/images/I/71KIBgL1xmS._SL1500_.jpg",
+      text:"Filter 3",
+      subtitle:"this is a subtile"
+
   },
   {
-    id:3,
-    image:"https://image.shutterstock.com/image-photo/large-beautiful-drops-transparent-rain-600w-668593321.jpg",
-    text:"Filter3"
+      id:4,
+      name:'filter',
+      image:"https://images-na.ssl-images-amazon.com/images/I/71A9Vo1BatL._SX679_.jpg",
+      text:"Filter 4",
+      subtitle:"this is a subtile"
+
   },
   {
-    id:4,
-    image:"https://image.shutterstock.com/image-photo/large-beautiful-drops-transparent-rain-600w-668593321.jpg",
-    text:"Filter4"
+      id: 5,
+      name: 'filter',
+      image: "https://images-na.ssl-images-amazon.com/images/I/71pkQYAsvKL._SL1500_.jpg",
+      text: "Filter 4.1",
+      subtitle:"this is a subtile"
+
   },
+  {
+      id:6,
+      name:'filter',
+      image:"https://m.media-amazon.com/images/I/51x00TKVjLS._AC_UY218_.jpg",
+      text:"Filter 5",
+      subtitle:"this is a subtile"
+  },
+  {
+      id: 7,
+      name: 'filter',
+      image: "https://images-na.ssl-images-amazon.com/images/I/61F91pD42cL._SL1500_.jpg",
+      text: "Filter 6",
+      subtitle: "this is a subtile"
+  },
+  {
+      id:8,
+      name:'filter',
+      image:"https://images-na.ssl-images-amazon.com/images/I/71A9Vo1BatL._SX679_.jpg",
+      text:"Filter 7",
+      subtitle:"this is a subtile"
+
+  },
+  {
+      id: 9,
+      name: 'filter',
+      image: "https://images-na.ssl-images-amazon.com/images/I/71pkQYAsvKL._SL1500_.jpg",
+      text: "Filter 8",
+      subtitle:"this is a subtile"
+
+  },
+  
 ]
 // var InitialARScene = require('./js/HelloWorldSceneAR');
 const {width,height}=Dimensions.get("window")
 const App  = () => {
-  const [screen,setScreen]=useState("Home")
+  const [screen,setScreen]=useState("Browse")
   const [select,setSelect]=useState(1)
 
   const [selectedProduct, setSelectedProduct] = useState({productUrl: 'Some Url'})
